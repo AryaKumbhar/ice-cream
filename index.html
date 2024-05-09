@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ice cream</title>
+    <style>
+        body {
+            background-color: white;
+        }
+        .container {
+            text-align: center;
+        }
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        table {
+            border-collapse: collapse;
+            margin: auto;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            AMUL ICE CREAM SHOP
+        </div>
+    </div>
+
+    <form action="1.php" method="post">
+        <table border="1" align="center">
+            <tr>
+                <td><label>Enter Name:</label></td>
+                <td><input type="text" name="name"></td>
+            </tr>
+            <tr>
+                <td><label>Quantity:</label></td>
+                <td>
+                    <input type="radio" name="quantity" value="50ml">50ml
+                    <input type="radio" name="quantity" value="65ml">65ml
+                    <input type="radio" name="quantity" value="70ml">70ml
+                    <input type="radio" name="quantity" value="100ml">100ml
+                    <input type="radio" name="quantity" value="125ml">125ml
+                    <input type="radio" name="quantity" value="150ml">150ml
+                    <input type="radio" name="quantity" value="190ml">190ml
+                    <input type="radio" name="quantity" value="250ml">250ml
+                    <input type="radio" name="quantity" value="500ml">500ml
+
+                </td>
+            </tr>
+            <tr>
+                <td><label>Flavour:</label></td>
+                <td>
+                    <input type="radio" name="flavour" value="Vanilla">Vanilla
+                    <input type="radio" name="flavour" value="Butterscotch">Butterscotch
+                    <input type="radio" name="flavour" value="PistaBadam">PistaBadam
+                    <input type="radio" name="flavour" value="RoastedAlmond">RoastedAlmond
+                    <input type="radio" name="flavour" value="KingAlphonso">KingAlphonso
+                    <input type="radio" name="flavour" value="Chocolate">Chocolate
+                    <input type="radio" name="flavour" value="ChocolateBrownie">ChocolateBrownie
+                    <input type="radio" name="flavour" value="Blueberry">Blueberry
+                    <input type="radio" name="flavour" value="BlackCurrant">BlackCurrant
+
+                </td>
+            </tr>
+            <tr>
+                <td><label>Enter Email:</label></td>
+                <td><input type="email" name="email"></td>
+            </tr>
+            <tr>
+                <td><label>Enter Phone:</label></td>
+                <td>
+                    <input type="tel" name="phone"  maxlength="10" pattern="[0-9]{10}" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="submit" name="save" value="Submit" style="font-size:20px"></td>
+            </tr>
+        </table>
+    
+    
+
+</body>
+</html>
